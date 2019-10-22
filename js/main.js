@@ -92,7 +92,20 @@ $(document).ready(function() {
       hideValidate(this);
     });
   });
-
+  $("#top-link").css("border-bottom", "2px solid white");
+  // $("#top-link").css("padding-bottom", "10px");
+  $("nav a").click(function(event) {
+    $("a").each(function() {
+      console.log(this.id, event.target.id);
+      if (this.id != event.target.id) {
+        $("#" + this.id).css("border-bottom", "none");
+        // $("#" + this.id).css("padding-bottom", "none");
+      } else {
+        $("#" + this.id).css("border-bottom", "2px solid white");
+        // $("#" + this.id).css("padding-bottom", "10px");
+      }
+    });
+  });
   function showValidate(input) {
     var thisAlert = $(input).parent();
 
