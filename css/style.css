@@ -608,8 +608,9 @@ textarea.input2:valid {
 
 .footer_left p {
   margin-bottom: 0px;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
+  font-family: "comfortaalight", sans-serif;
 }
 
 .footer_right {
