@@ -83,7 +83,10 @@ $(document).ready(function() {
     }
     // return check;
   });
-
+  $("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+  });
   $(".validate-form .input2").each(function() {
     $(this).focus(function() {
       hideValidate(this);

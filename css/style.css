@@ -606,6 +606,14 @@ textarea.input2:valid {
   background-color: #e0f7fa;
   border-radius: 10px;
 }
+#img-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-header {
+  height: 50px !important;
+}
 /*# sourceMappingURL=style.css.map */
 
 /* Responsive query */
@@ -734,5 +742,13 @@ textarea.input2:valid {
 @media screen and (min-width: 900px) and (max-width: 1600px) {
   .team {
     height: 730px;
+  }
+  .about {
+    height: 1000px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .arrow-down {
+    margin-bottom: 30px;
   }
 }
