@@ -8,7 +8,9 @@
 html {
   font-family: "comfortaalight", sans-serif;
 }
-
+body{
+  background-color: #F9F9F9 !important
+}
 p {
   font-size: 16px;
   line-height: 35px;
@@ -318,7 +320,7 @@ nav a {
 
 .wrap-contact2 {
   width: 90%;
-  background: #fff;
+  background: #f9f9f9;
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 60px 55px;
