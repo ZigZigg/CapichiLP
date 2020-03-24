@@ -181,9 +181,9 @@ nav a {
   margin-top:100px
 }
 @media screen and (max-width: 768px) {
-  .nav_container .nav {
-    display: none;
-    width: 100%;
+  .nav_container .nav li {
+    /* display: none; */
+    margin: 0px 20px;
   }
   .nav_container .nav .nav_item a {
     border-bottom: 1px solid #ccc;
@@ -325,6 +325,9 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
+  .nav_container .nav{
+    display:none
+  }
   .service img {
     height: 160px;
     float: none;
@@ -890,6 +893,6 @@ textarea.input2:valid {
     font-size: 20px;
   }
   .input-checkbox {
-    margin-top: -4px;
+    /* margin-top: -4px; */
   }
 }
