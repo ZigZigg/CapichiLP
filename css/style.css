@@ -13,6 +13,7 @@ p {
   font-size: 16px;
   line-height: 35px;
   color: #333333;
+  font-family: "comfortaalight", sans-serif;
 }
 
 h1 {
@@ -137,10 +138,10 @@ header {
   } */
 
 .header_right li a {
-  color: #fff !important;
+  color: #000 !important;
 }
 .header_center li a {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .nav_container {
@@ -169,7 +170,16 @@ nav a {
   justify-content: space-between;
   align-items: center;
 }
-
+#top #top-logo{
+  height: 170px;
+  margin-top: 190px
+}
+.logo-footer{
+  height: 54px;
+}
+#raton{
+  margin-top:100px
+}
 @media screen and (max-width: 768px) {
   .nav_container .nav {
     display: none;
@@ -186,13 +196,13 @@ nav a {
 
 .top_image {
   background-position: center 100%;
-  background-image: url("../../CapichiLP/images/top2.jpg");
+  background-image: url("../images/banner2.png");
   background-size: cover;
   height: 950px;
 }
 
 .about {
-  background-image: url(../../CapichiLP/images/about.jpg);
+  background-image: url("../images/about_img.png");
   background-position: center 50%;
   background-size: contain;
   height: 1250px;
@@ -207,19 +217,16 @@ nav a {
   height: 100%;
 }
 
-.top img {
+/* .top img {
   height: 500px;
-}
+} */
 
 .top h1 {
-  color: #fff;
-  position: absolute;
-  top: 13%;
-  left: 0;
-  right: 0;
+  color: #000;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  margin-top:10px
 }
 .service_each p,
 .service_each span {
@@ -238,7 +245,7 @@ nav a {
 }
 
 .service_blue {
-  color: #26c6da;
+  color: #F7941C;
   padding-bottom: 20px;
 }
 
@@ -250,7 +257,7 @@ nav a {
 }
 
 .service img {
-  height: 220px;
+  width: 100%;
   float: right;
 }
 
@@ -263,7 +270,7 @@ nav a {
 }
 
 .team_member {
-  width: 33%;
+  /* width: 33%; */
   padding: 0px 50px !important;
   display: inline-block;
   text-align: center;
@@ -321,6 +328,26 @@ nav a {
   .service img {
     height: 160px;
     float: none;
+    margin: auto;
+    width: auto;
+  }
+  .footer{
+    height: 360px !important;
+  }
+  .scoll-top{
+    padding:0 20px 0 0 !important
+  }
+  #team-content__main #row-2{
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+  #row-2 .team_member{
+    width: auto !important;
+  }
+  .footer-content{
+    align-items: none
   }
 }
 
@@ -473,7 +500,7 @@ textarea.input2:valid {
   z-index: -1;
   width: 300%;
   height: 100%;
-  background: #26c6da;
+  background: #F7941C;
   top: 0;
   left: -100%;
   -webkit-transition: all 0.4s;
@@ -583,9 +610,9 @@ textarea.input2:valid {
   position: relative;
   vertical-align: bottom;
   text-align: center;
-  background-position: center 70%;
-  height: 400px;
-  background-image: url(../../CapichiLP/images/footer.jpg);
+  background-position: center 100%;
+  height: 410px;
+  background-image: url('../images/footer.png');
 }
 
 .footer-content {
@@ -597,13 +624,12 @@ textarea.input2:valid {
 }
 
 .footer_left {
-  position: absolute;
   bottom: 0;
   text-align: center;
 }
 
 .footer_left img {
-  height: 100px;
+  height: 50px;
 }
 
 .footer_left p {
@@ -629,7 +655,7 @@ textarea.input2:valid {
 }
 .input2 {
   width: 100%;
-  background-color: #e0f7fa;
+  background-color: #FAEFE2;
   border-radius: 10px;
   padding-left: 20px;
 }
@@ -647,36 +673,65 @@ textarea.input2:valid {
 .about-content tr td {
   font-family: "comfortaalight", sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
-
+#team_background_bottom{
+  height: 600px;
+  position: absolute;
+  left: -10px;
+  bottom: -20px;
+}
+#team_background_top{
+  height: 600px;
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+#team-content__main{
+  width: 90%;
+  margin: auto
+}
+.team-content ul li{
+  margin-bottom: 10px
+}
+#row-2{
+  width: 70%;
+  justify-content: space-around;
+  margin: auto
+}
+#row-2 .team_member{
+  width: 50%;
+}
 /* Responsive query */
 @media screen and (min-width: 990px) {
+
   .about-content {
     border-collapse: separate;
     border-spacing: 0 35px;
   }
   .about-content .about_left {
     font-weight: 600;
-    color: #26c6da;
+    color: #F7941C;
   }
   .about div {
     margin-top: 100px;
   }
   .team {
-    background-image: url(../../CapichiLP/images/team-background.jpg);
+    /* background-image: url(../../CapichiLP/images/teamImg.png); */
     background-size: contain;
-    height: 900px;
+    /* height: 900px; */
     display: flex;
     align-items: center;
     padding: 120px;
     margin-top: -10.5rem;
+    position: relative;
   }
   .team-content {
     width: 100%;
     height: 100%;
+    padding: 60px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     background-color: white;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.68) 3px 4px 13px -4px;
@@ -688,7 +743,7 @@ textarea.input2:valid {
     margin-top: 100px;
   }
   .top h1 {
-    font-size: 72px;
+    font-size: 65px;
   }
   .form-content {
     width: 50%;
@@ -710,7 +765,7 @@ textarea.input2:valid {
   }
   .input2 {
     width: 80%;
-    background-color: #e0f7fa;
+    background-color: #FAEFE2;
     border-radius: 10px;
   }
   .wrap-input2 {
@@ -732,21 +787,32 @@ textarea.input2:valid {
   .contact2-form-btn {
     margin: auto;
   }
-  .input-message .title-input {
+  .title-input-jp {
     width: 16%;
   }
   .footer_left img {
-    height: 170px;
+    height: 54px;
   }
 }
-
+/* #sota{
+  width: 450px;
+} */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #team-content__main #row-2{
+    width: 80%;
+  }
+  #team-content__main #row-2 .team_member{
+    width: 50%;
+  }
   .team_member img {
     height: 170px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
+  #team_background_bottom, #team_background_top{
+    display: none
+  }
   .about {
     height: 700px;
     background-size: cover;
@@ -773,9 +839,9 @@ textarea.input2:valid {
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1600px) {
-  .team {
+  /* .team {
     height: 730px;
-  }
+  } */
   .about {
     height: 1000px;
   }
@@ -796,8 +862,11 @@ textarea.input2:valid {
   .wrap-contact2 {
     padding: 72px 85px 60px 85px;
   }
-  .input-message .title-input {
+  .title-input-ja {
     width: 10%;
+  }
+  .title-input-en {
+    width: 25%;
   }
   .title-input {
     font-size: 20px;

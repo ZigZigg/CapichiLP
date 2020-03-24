@@ -1,4 +1,28 @@
 $(document).ready(function() {
+  $("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+  });
+
+  $(".validate-form .input2").each(function() {
+    $(this).focus(function() {
+      hideValidate(this);
+    });
+  });
+
+  $("#top-link").css("border-bottom", "2px solid white");
+
+  $("nav a").click(function(event) {
+    $("nav a").each(function() {
+      console.log(this.id, event.target.id);
+      if (this.id != event.target.id) {
+        $("#" + this.id).css("border-bottom", "none");
+      } else {
+        $("#" + this.id).css("border-bottom", "2px solid white");
+      }
+    });
+  });
+
   /*==================================================================
   [ Focus Contact2 ]*/
   $(".input2").each(function() {
@@ -62,7 +86,7 @@ $(document).ready(function() {
       var form_content = $("#form_detail").val();
       $.ajax({
         type: "POST",
-        url: "sendmail.php",
+        url: "/landing_page/mailing",
         data: {
           form_name: form_name,
           form_email: form_email,
@@ -83,29 +107,13 @@ $(document).ready(function() {
     }
     // return check;
   });
-  $("a[href='#top']").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-  });
+
   $(".validate-form .input2").each(function() {
     $(this).focus(function() {
       hideValidate(this);
     });
   });
-  $("#top-link").css("border-bottom", "2px solid white");
-  // $("#top-link").css("padding-bottom", "10px");
-  $("nav a").click(function(event) {
-    $("a").each(function() {
-      console.log(this.id, event.target.id);
-      if (this.id != event.target.id) {
-        $("#" + this.id).css("border-bottom", "none");
-        // $("#" + this.id).css("padding-bottom", "none");
-      } else {
-        $("#" + this.id).css("border-bottom", "2px solid white");
-        // $("#" + this.id).css("padding-bottom", "10px");
-      }
-    });
-  });
+
   function showValidate(input) {
     var thisAlert = $(input).parent();
 
